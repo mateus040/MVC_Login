@@ -41,7 +41,7 @@ class LoginDAO extends DAO
         $stmt->bindValue(2, $senha);
         $stmt->execute();
 
-        return $stmt->fetchObject("App\Model\LoginModel"); // Retornando um objeto específico PessoaModel
+        return $stmt->fetchObject("MVC_LOGIN\Model\LoginModel"); // Retornando um objeto específico PessoaModel
     }
 
 
